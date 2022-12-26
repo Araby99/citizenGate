@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة المواطن | حسابي الشخصي</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/myaccount.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="py-sm-5">
+        <!-- Start Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light container bg-white rounded px-4">
+            <a class="navbar-brand d-lg-none" href="../"><img src="../images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul
+                    class="navbar-nav mx-auto w-100 justify-content-evenly align-items-sm-start align-items-lg-center text-center">
+                    <li style="flex: 3;" class="nav-item dropdown-center order-md-0 order-sm-2" id="loginContainer">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">
+                            <i class="fas fa-user text-color-secondary fs-5"></i>
+                        </a>
+                        <ul class="dropdown-menu py-3 px-4 m-3 text-center">
+                            <li>
+                                <p class="m-0 dropdown-item text-color-primary text-font-semibold" id="loginNav"
+                                    role="button">تسجيل
+                                    الدخول</p>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <p class="m-0 dropdown-item text-color-secondary text-font-semibold" id="registerNav"
+                                    role="button">تسجيل
+                                    جديد</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="flex: 3;" class="nav-item dropdown-center order-md-0 order-sm-2" id="loggedContainer">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">
+                            <div class="user d-flex gap-1 align-items-center justify-content-center">
+                                <p class="user-name m-0">محمد أحمد</p>
+                                <div class="image">
+                                    <img src="../images/avatar.png" alt="Avatar">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu py-3 px-4 m-3 text-center">
+                            <li><a class="dropdown-item text-color-primary text-font-semibold"
+                                    href="pages/myaccount.html">الملف الشخصي</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger text-font-semibold" role="button" id="logout">تسجيل
+                                    خروج</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="flex: 3;" class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">تواصل معنا</a>
+                    </li>
+                    <li style="flex: 3;" class="nav-item">
+                        <a class="nav-link" href="../index.html#why">لماذا نحن</a>
+                    </li>
+                    <li style="flex: 3;" class="nav-item">
+                        <a class="nav-link" href="../index.html#ourClients">عملائنا</a>
+                    </li>
+                    <a class="d-none d-lg-block" href="../" style="flex: 5;"><img
+                            src="../images/logo-nav-light.png"></a>
+                    <li style="flex: 4;" class="nav-item">
+                        <a class="nav-link" href="#">الخدمات الالكترونية</a>
+                    </li>
+                    <li style="flex: 4;" class="nav-item">
+                        <a class="nav-link" href="../index.html#ourServices">خدماتنا</a>
+                    </li>
+                    <li style="flex: 4;" class="nav-item">
+                        <a class="nav-link text-font-bold text-color-secondary" href="#">بوابة المواطن</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="two-texts">
+                <p class="first">حسابي</p>
+                <p class="last">الملف الشخصي</p>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="orders rounded">
+                        <p class="title text-center text-light fs-5 bg-color-primary py-3">طلباتي</p>
+                        <div class="my-orders d-flex justify-content-between align-items-center py-5 px-3 g-5">
+                            <a href="previousOrders.html" class="text-light d-flex align-items-center gap-3">
+                                <p class="text-color-primary m-0 text-font-bold">طلباتي السابقة</p>
+                                <div
+                                    class="icon justify-content-center rounded-circle d-flex align-items-center bg-color-secondary">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                            </a>
+                            <a href="currentOrders.html" class="text-light d-flex align-items-center gap-3">
+                                <p class="text-color-primary m-0 text-font-bold">طلباتي الحالية</p>
+                                <div
+                                    class="icon justify-content-center rounded-circle d-flex align-items-center bg-color-secondary">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-12 d-lg-block d-sm-none"></div>
+                <div class="col-lg-6 col-sm-12">
+                    <form class="edit-account">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <input type="text" class="form-control p-2" placeholder="الإسم">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <input type="text" class="form-control p-2" placeholder="اسم المنشأة">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <input type="email" class="form-control p-2" placeholder="البريد الالكترونى">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <input type="number" class="form-control p-2" placeholder="رقم السجل التجارى">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 position-relative mt-3">
+                                <input type="tel" class="form-control p-2" placeholder="رقم الجوال">
+                                <div class="country">
+                                    <p class="code text-font-bold m-0">966</p>
+                                    <div class="flag">
+                                        <img src="../images/flag.png" alt="Flag">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <input type="number" class="form-control p-2" placeholder="رقم الهوية">
+                            </div>
+                            <div class="col-lg-6 col-sm-12 mt-3">
+                                <select class="custom-select w-100 p-1 rounded">
+                                    <option selected hidden>نوع العميل</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" value="تعديل"
+                            class="d-block w-100 w-lg-50 my-4 mx-auto bg-color-primary text-center text-light text-font-bold rounded py-3 border-0">
+                        <button
+                            class="d-block w-100 w-lg-50 my-4 mx-auto bg-color-secondary text-center text-light text-font-bold rounded py-3 border-0"
+                            id="changePassBtn">تغيير
+                            كلمة المرور</button>
+                    </form>
+                </div>
+            </div>
+            <div class="clients pb-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="owl-nav d-flex gap-4 align-items-center">
+                        <div id="owl-3-next">
+                            <i class="fas fa-caret-left"></i>
+                        </div>
+                        <div id="owl-3-prev">
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                    <div class="two-texts">
+                        <p class="first">خدماتى</p>
+                        <p class="last">خدماتى السابقة</p>
+                    </div>
+                </div>
+                <div class="owl-carousel owl-theme our-service" id="owl-3">
+                    <div class="service-item rounded py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                    <div class="service-item py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                    <div class="service-item py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                    <div class="service-item py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                    <div class="service-item py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                    <div class="service-item py-5 px-3">
+                        <div>
+                            <div class="title d-flex gap-2 align-items-center">
+                                <div
+                                    class="service-icon rounded-circle bg-color-secondary text-light d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <p class="text-color-primary m-0">استشارات</p>
+                            </div>
+                            <p class="desc text-center fs-4 text-color-primary text-font-semibold">استشارة جنائية</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Nav -->
+    </div>
+    <!-- End Header -->
+    <!-- Start Message -->
+    <div class="message">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12"></div>
+                <div class="col-md-4 col-sm-12 message-container p-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="images">
+                            <img src="../images/email.png" alt="Email">
+                        </div>
+                        <div class="two-texts">
+                            <p class="first">تواصل معنا</p>
+                            <p class="last">رسالتك تهمنا</p>
+                        </div>
+                    </div>
+                    <form class="text-end mt-5 message-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control text-end" placeholder="الإسم">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control text-end" placeholder="رقم الجوال">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control text-end" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control text-end" placeholder="رسالتك"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2" class="text-end">رسالتك</label>
+                        </div>
+                        <div class="send">
+                            <input type="submit" value="إرسال" class="message-send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Message -->
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="social">
+                            <div>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="two-texts">
+                            <p class="first text-light m-0">جميع الخدمات</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-12"></div>
+                <div class="col-md-4 col-sm-12"></div>
+            </div>
+            <div class="row mt-5">
+                <div class="row text-end col-md-7 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">الواتساب</p>
+                        <p class="contact-desc text-light">+9660500133232</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fas fa-phone-alt"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">الجوال</p>
+                        <p class="contact-desc text-light">+9660500133232</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">الإسم</p>
+                        <p class="contact-desc text-light">بوابة المواطن</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">البريد الالكترونى</p>
+                        <p class="contact-desc text-light">بوابة المواطن</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">الموقع</p>
+                        <p class="contact-desc text-light">+9660500133232</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 contact-item">
+                        <div class="contact-icon">
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                        <p class="contact-name text-color-secondary">موقع الويب</p>
+                        <p class="contact-desc text-light">+9660500133232</p>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-12"></div>
+                <div class="col-md-4 col-sm-12"></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center footer-ul">
+                <div class="logo-alt">
+                    <img src="../images/logo-alt.png" alt="Logo">
+                </div>
+                <a href="#" class="text-light text-decoration-none">بوابة المواطن</a>
+                <a href="#" class="text-light text-decoration-none">خدماتنا</a>
+                <a href="#" class="text-light text-decoration-none">الخدمات الالكترونية</a>
+                <a href="#" class="text-light text-decoration-none">لماذا نحن</a>
+                <a href="#" class="text-light text-decoration-none">تواصل معنا</a>
+                <a href="pages/policy.html" class="text-light text-decoration-none">الشروط و الاحكام</a>
+            </div>
+            <p class="text-center text-color-secondary">جميع الحقوق محفوظة &copy; 2022</p>
+        </div>
+    </footer>
+    <!-- Start Actions -->
+    <div class="actions">
+        <div class="overlay"></div>
+        <div class="action-container">
+            <div class="cancel close-action">
+                <i class="fas fa-times text-light"></i>
+            </div>
+            <div class="d-none flex-column justify-content-between h-100 gap-5" id="changePass">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="images">
+                        <img src="../images/email-pass.png" alt="Email">
+                    </div>
+                    <div class="two-texts">
+                        <p class="first">كلمة المرور</p>
+                        <p class="last">تغيير كلمة المرور</p>
+                    </div>
+                </div>
+                <form id="changePassForm">
+                    <div class="row rtl">
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="password" id="oldPass" class="form-control p-2"
+                                placeholder="كلمة المرور القديمة" name="oldPass">
+                            <div class="show-pass" id="oldPassShow">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="password" id="newPass" class="form-control p-2"
+                                placeholder="كلمة المرور الجديدة" name="newPass">
+                            <div class="show-pass" id="newPassShow">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="password" id="confirmPass" class="form-control p-2"
+                                placeholder="تأكيد كلمة المرور الجديدة" name="confirmPass">
+                            <div class="show-pass" id="confirmPassShow">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <p class="text-center text-danger d-none" id="changeIssue">* كلمة السر غير متطابقة</p>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="submit"
+                                class="d-block bg-color-secondary w-100 w-lg-50 rounded py-2 text-center text-light text-font-semibold mx-auto border-color-secondary"
+                                id="loginBtn" value="تغيير كلمة المرور"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d-none flex-column justify-content-between h-100 gap-5" id="login">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="images">
+                        <img src="../images/email-send.png" alt="Email">
+                    </div>
+                    <div class="two-texts">
+                        <p class="first">دخول مستخدم</p>
+                        <p class="last">تسجيل الدخول</p>
+                    </div>
+                </div>
+                <form class="login-account rtl w-100 w-lg-50 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="tel" class="form-control p-2" placeholder="رقم الجوال" name="tel">
+                            <div class="country">
+                                <p class="code text-font-bold m-0">966</p>
+                                <div class="flag">
+                                    <img src="../images/flag.png" alt="Flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="password" id="loginPassword" class="form-control p-2" name="password"
+                                placeholder="كلمة المرور">
+                            <div class="show-pass" id="showPassword">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <p class="text-center text-danger mt-2 d-none" id="loginIssue">* رقم الجوال أو كلمة المرور غير
+                            صحيحة</p>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <p role="button"
+                                class="text-center text-color-secondary text-decoration-underline text-font-semibold"
+                                id="forgetPassBtn">
+                                نسيت
+                                كلمة المرور؟</p>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="submit"
+                                class="bg-color-secondary w-100 rounded py-2 text-center text-light text-font-semibold mx-auto border-color-secondary"
+                                value="دخول الآن">
+                        </div>
+                    </div>
+                </form>
+
+                <p class="text-center color-primary">ليس لديك حساب؟ <span role="button"
+                        class="text-font-semibold text-color-secondary text-decoration-underline" id="registerBtn">
+                        مستخدم جديد</span>
+                </p>
+            </div>
+            <div class="d-none flex-column justify-content-between h-100 gap-5" id="register">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="images">
+                        <img src="../images/email-add.png" alt="Email">
+                    </div>
+                    <div class="two-texts">
+                        <p class="first">مستخدم جديد</p>
+                        <p class="last">تسجيل جديد</p>
+                    </div>
+                </div>
+                <form class="register rtl w-100 w-lg-50 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="text" class="form-control p-2" placeholder="الاسم">
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="email" class="form-control p-2" placeholder="البريد الالكترونى">
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="tel" class="form-control p-2" placeholder="رقم الجوال">
+                            <div class="country">
+                                <p class="code text-font-bold m-0">966</p>
+                                <div class="flag">
+                                    <img src="../images/flag.png" alt="Flag">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <select class="custom-select w-100 p-1 rounded">
+                                <option selected hidden>نوع العميل</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="text" class="form-control p-2" placeholder="اسم المنشأة">
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="number" class="form-control p-2" placeholder="رقم السجل التجارى">
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="number" class="form-control p-2" placeholder="رقم الهوية">
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="password" id="registerPass" class="form-control p-2" placeholder="كلمة المرور">
+                            <div class="show-pass" id="registerPassShow">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <p class="text-center color-text-primary">بقيامك بالتسجيل فأنت تقوم بالموافقة على <a
+                                    href="pages/policy.html" target="_blank" class="text-color-secondary">الشروط و
+                                    الاحكام</a> الخاصة بنا</p>
+                        </div>
+                        <div class="col-lg-12 position-relative mt-3">
+                            <input type="submit"
+                                class="bg-color-secondary w-100 rounded py-2 text-center text-light text-font-semibold mx-auto border-color-secondary"
+                                value="تسجيل">
+                        </div>
+                    </div>
+                </form>
+                <p class="text-center color-primary">لديك حساب؟ <span role="button"
+                        class="text-font-semibold text-color-secondary text-decoration-underline"
+                        id="loginRegisterBtn">دخول
+                        الآن</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/myAccount.js"></script>
+    <!-- End Footer -->
+</body>
+
+</html>

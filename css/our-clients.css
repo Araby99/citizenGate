@@ -1,0 +1,46 @@
+.navigate {
+    direction: rtl;
+}
+.navigate > .nav-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px #fff;
+    color: #C3C3C3;
+    transition: .5s;
+    background: #eeeeee;
+}
+.navigate > .nav-icon:hover {
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+}
+.navigate .navigate-item {
+    background: #eeeeee;
+    border: solid 1px #eeeeee;
+}
+.navigate .navigate-item.active {
+    background: #fff;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color)!important;
+}
+.order-item {
+    cursor: pointer;
+    padding: 30px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+.order-date {
+    color: #C3C3C3;
+}
+.order-icon {
+    height: 70px;
+    width: 70px;
+}
+.provider img {
+    height: 30px;
+}

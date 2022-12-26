@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Regular;
+    src: url("../fonts/Cairo-Regular.ttf");
+}
+@font-face {
+    font-family: Light;
+    src: url("../fonts/Cairo-Light.ttf");
+}
+@font-face {
+    font-family: Bold;
+    src: url("../fonts/Cairo-Bold.ttf");
+}
+@font-face {
+    font-family: SemiBold;
+    src: url("../fonts/Cairo-SemiBold.ttf");
+}
+* {
+    font-family: Regular;
+}

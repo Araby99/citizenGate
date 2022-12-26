@@ -1,0 +1,34 @@
+.my-orders .icon {
+    height: 30px;
+    width: 30px;
+}
+.orders {
+    border: solid 1px var(--primary-color);
+}
+.edit-account {
+    direction: rtl;
+}
+.edit-account input:not([type="submit"]),
+.edit-account select {
+    background: #EEEEEE;
+    color: #C3C3C3;
+}
+.service-item .service-icon {
+    height: 30px;
+    width: 30px;
+}
+.service-item {
+    box-shadow: 0 0 10px 0 #ccc;
+    margin: 20px 10px;
+}
+.country {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    gap: 10px;
+}
+.country img {
+    height: 20px;
+}

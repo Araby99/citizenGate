@@ -1,0 +1,71 @@
+.message {
+    height: 300px;
+}
+.message-container {
+    border-radius: 10px;
+    border: solid 3px var(--primary-color);
+    background: #fff;
+    z-index: 5;
+}
+.message-form input,
+.message-form textarea {
+    background: #EEEEEE;
+    color: #C3C3C3;
+    padding: 15px;
+}
+.message-send {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: var(--secondary-color)!important;
+    color: #fff!important;
+    font-family: Bold;
+    border: none;
+}
+footer {
+    background: var(--primary-color) url("../images/footer-bg.png") no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+.social {
+    display: flex;
+    gap: 10px;
+}
+.social > div,
+.contact-icon {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    transform: translate(-100%, 0);
+    margin-bottom: 10px;
+}
+.social > div a,
+.contact-icon a {
+    color: #fff;
+    font-size: .9rem;
+}
+.footer-ul {
+    flex-direction: row-reverse;
+}
+.logo-alt img {
+    max-height: 100px;
+}
+@media (max-width: 768px) {
+    .message {
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 580px) {
+    .footer-ul {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
