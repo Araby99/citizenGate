@@ -28,7 +28,7 @@ const registerPassShow = document.getElementById("registerPassShow");
 const registerPass = document.getElementById("registerPass");
 const changeIssue = document.getElementById("changeIssue");
 
-let isLogin = false;
+let isLogin = true;
 showPassword.onclick = () => loginPassword.type === "password" ? loginPassword.type = "text" : loginPassword.type = "password";
 registerPassShow.onclick = () => registerPass.type === "password" ? registerPass.type = "text" : registerPass.type = "password";
 /* End 1 */

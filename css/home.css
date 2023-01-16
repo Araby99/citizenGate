@@ -135,12 +135,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 #ccc;
 }
 .client-item .image img {
-    object-fit: contain;
+    object-fit: cover;
+    height: 100%;
 }
 .order-btn {
     cursor: pointer;
@@ -259,7 +260,6 @@
         width: 100%!important;
     }
     .client-item .image img {
-        width: auto;
         height: 100%;
     }
     .action-container {
