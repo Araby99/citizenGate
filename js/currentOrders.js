@@ -1,12 +1,15 @@
 const newOrder = document.getElementsByClassName("new-order");
 const orderDone = document.getElementsByClassName("order-done");
 const orderInCharge = document.getElementsByClassName("order-in-charge");
-const actions = document.getElementsByClassName("actions")[0];
+const orderActions = document.getElementsByClassName("actions")[0];
+const actions = document.getElementsByClassName("actions")[1];
 const overlay = document.getElementsByClassName("overlay")[0];
 const orderInfo = document.getElementById("orderInfo");
 const newOrderC = document.getElementById("orderNew");
 const orderInChargeC = document.getElementById("orderInCharge");
 const closeAction = document.getElementsByClassName("close-action");
+
+const overlayAc = document.getElementsByClassName("overlay")[1];
 const loginRegisterBtn = document.getElementById("loginRegisterBtn");
 const login = document.getElementById("login");
 const loginPassword = document.getElementById("loginPassword");
@@ -33,6 +36,54 @@ const loginIssue = document.getElementById("loginIssue");
 const loginContainer = document.getElementById("loginContainer");
 const loggedContainer = document.getElementById("loggedContainer");
 const logout = document.getElementById("logout");
+const orderBtn = document.getElementsByClassName("order-btn");
+const cantDo = document.getElementById("cantDo");
+const loginBtn = document.getElementById("loginBtn");
+const order = document.getElementById("order");
+
+const setCss = (selector, propery, value) => {
+    selector.style.setProperty(propery, value, "important");
+}
+
+const closeAll = () => {
+    actions.style.display = "none";
+    orderActions.style.display = "none";
+    document.body.style.overflow = "auto";
+    setCss(forgetPass, "display", "none");
+    setCss(cantDo, "display", "none");
+    setCss(enterCode, "display", "none");
+    setCss(login, "display", "none");
+    setCss(register, "display", "none");
+    setCss(resetPass, "display", "none");
+    setCss(order, "display", "none");
+    setCss(orderInfo, "display", "none")
+    setCss(newOrderC, "display", "none")
+    setCss(orderInChargeC, "display", "none")
+}
+
+overlay.onclick = closeAll;
+
+for (let i = 0; i < newOrder.length; i++) {
+    newOrder[i].onclick = () => {
+        orderActions.style.display = "block";
+        document.body.style.overflow = "hidden";
+        setCss(newOrderC, "display", "flex")
+    }
+}
+for (let i = 0; i < orderDone.length; i++) {
+    orderDone[i].onclick = () => {
+        orderActions.style.display = "block";
+        document.body.style.overflow = "hidden";
+        setCss(orderInfo, "display", "flex")
+    }
+}
+for (let i = 0; i < orderInCharge.length; i++) {
+    orderInCharge[i].onclick = () => {
+        orderActions.style.display = "block";
+        document.body.style.overflow = "hidden";
+        setCss(orderInChargeC, "display", "flex")
+    }
+}
 
 const form = document.getElementsByTagName("form");
 /* Prevent All Forms from submit */
@@ -42,11 +93,7 @@ for (let i = 0; i < form.length; i++) {
     }
 }
 
-let isLogin = false;
-
-const setCss = (selector, propery, value) => {
-    selector.style.setProperty(propery, value, "important");
-}
+let isLogin = true;
 const checkLogged = () => {
     if (isLogin) {
         setCss(loggedContainer, "display", "block");
@@ -57,6 +104,17 @@ const checkLogged = () => {
     }
 }
 checkLogged();
+for (let i = 0; i < orderBtn.length; i++) {
+    orderBtn[i].onclick = () => {
+        actions.style.display = "block";
+        document.body.style.overflow = "hidden";
+        if (isLogin) {
+            setCss(order, "display", "flex")
+        } else {
+            setCss(cantDo, "display", "flex")
+        }
+    }
+}
 
 loginNav.onclick = () => {
     actions.style.display = "block";
@@ -70,20 +128,14 @@ registerNav.onclick = () => {
     setCss(register, "display", "flex");
 }
 
-const closeAll = () => {
-    actions.style.display = "none";
-    document.body.style.overflow = "auto";
-    setCss(forgetPass, "display", "none");
-    setCss(enterCode, "display", "none");
-    setCss(login, "display", "none");
-    setCss(register, "display", "none");
-    setCss(resetPass, "display", "none");
-}
-
 for (let i = 0; i < closeAction.length; i++) {
     closeAction[i].onclick = () => closeAll()
 }
-overlay.onclick = closeAll;
+overlayAc.onclick = closeAll;
+loginBtn.onclick = () => {
+    setCss(cantDo, "display", "none");
+    setCss(login, "display", "flex");
+}
 forgetPassBtn.onclick = () => {
     setCss(login, "display", "none");
     setCss(forgetPass, "display", "flex");
@@ -167,41 +219,3 @@ ins.forEach(function (input) {
     });
 });
 in1.addEventListener('input', splitNumber);
-
-overlay.onclick = () => {
-    actions.style.display = "none";
-    document.body.style.overflow = "auto";
-    setCss(orderInfo, "display", "none")
-    setCss(newOrderC, "display", "none")
-    setCss(orderInChargeC, "display", "none")
-}
-for (let i = 0; i < newOrder.length; i++) {
-    newOrder[i].onclick = () => {
-        actions.style.display = "block";
-        document.body.style.overflow = "hidden";
-        setCss(newOrderC, "display", "flex")
-    }
-}
-for (let i = 0; i < orderDone.length; i++) {
-    orderDone[i].onclick = () => {
-        actions.style.display = "block";
-        document.body.style.overflow = "hidden";
-        setCss(orderInfo, "display", "flex")
-    }
-}
-for (let i = 0; i < orderInCharge.length; i++) {
-    orderInCharge[i].onclick = () => {
-        actions.style.display = "block";
-        document.body.style.overflow = "hidden";
-        setCss(orderInChargeC, "display", "flex")
-    }
-}
-for (let i = 0; i < closeAction.length; i++) {
-    closeAction[i].onclick = () => {
-        actions.style.display = "none";
-        document.body.style.overflow = "auto";
-        setCss(orderInfo, "display", "none")
-        setCss(newOrderC, "display", "none")
-        setCss(orderInChargeC, "display", "none")
-    }
-}
