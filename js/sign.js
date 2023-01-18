@@ -32,14 +32,6 @@ const cantDo = document.getElementById("cantDo");
 const loginBtn = document.getElementById("loginBtn");
 const order = document.getElementById("order");
 
-const form = document.getElementsByTagName("form");
-/* Prevent All Forms from submit */
-for (let i = 0; i < form.length; i++) {
-    form[i].onsubmit = e => {
-        e.preventDefault();
-    }
-}
-
 let isLogin = false;
 
 const setCss = (selector, propery, value) => {

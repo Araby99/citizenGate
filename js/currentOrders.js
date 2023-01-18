@@ -85,13 +85,7 @@ for (let i = 0; i < orderInCharge.length; i++) {
     }
 }
 
-const form = document.getElementsByTagName("form");
-/* Prevent All Forms from submit */
-for (let i = 0; i < form.length; i++) {
-    form[i].onsubmit = e => {
-        e.preventDefault();
-    }
-}
+
 
 let isLogin = true;
 const checkLogged = () => {
