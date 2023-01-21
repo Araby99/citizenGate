@@ -3,7 +3,6 @@ const oldPassShow = document.getElementById("oldPassShow");
 const oldPass = document.getElementById("oldPass");
 const closeAction = document.getElementsByClassName("close-action");
 const changePass = document.getElementById("changePass");
-const form = document.getElementsByTagName("form");
 const orderActions = document.getElementsByClassName("actions")[0];
 const actions = document.getElementsByClassName("actions")[1];
 const overlay = document.getElementsByClassName("overlay")[0];
@@ -49,13 +48,6 @@ for (let i = 0; i < confirmPassShow.length; i++) confirmPassShow[i].onclick = ()
 
 const setCss = (selector, propery, value) => {
     selector.style.setProperty(propery, value, "important");
-}
-
-/* Prevent All Forms from submit */
-for (let i = 0; i < form.length; i++) {
-    form[i].onsubmit = e => {
-        e.preventDefault();
-    }
 }
 
 const closeAll = () => {
@@ -138,7 +130,6 @@ loginRegisterBtn.onclick = () => {
 showPassword.onclick = () => loginPassword.type === "password" ? loginPassword.type = "text" : loginPassword.type = "password";
 registerPassShow.onclick = () => registerPass.type === "password" ? registerPass.type = "text" : registerPass.type = "password";
 LoginForm.onsubmit = e => {
-    e.preventDefault()
     if (e.target.tel.value == "00000" && e.target.password.value == "00000") {
         closeAll();
         isLogin = true;
@@ -213,7 +204,6 @@ for (let i = 0; i < closeAction.length; i++) {
 }
 
 changePassForm.onsubmit = e => {
-    e.preventDefault();
     if (e.target.newPass.value == e.target.confirmPass.value && e.target.newPass.value.trim() !== "") {
         closeAll();
         setCss(changeIssue, "display", "none");
