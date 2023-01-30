@@ -11,4 +11,15 @@ select.onchange = e => {
             clientsInfo[i].style.display = "block";
         }
     }
+    setTimeout(() => {
+        if (e.target.value === "person") {
+            for (let i = 0; i < clientsInfo.length; i++) {
+                clientsInfo[i].style.display = "none"
+            }
+        } else {
+            for (let i = 0; i < clientsInfo.length; i++) {
+                clientsInfo[i].style.display = "block";
+            }
+        }
+    }, 100);
 }
