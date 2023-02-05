@@ -32,3 +32,14 @@
 .country img {
     height: 20px;
 }
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-img {
+    height: 50px
+}
+.profile-img img {
+    height: 100%;
+}
